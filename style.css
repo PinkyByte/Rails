@@ -1,0 +1,87 @@
+body {
+    background-color: #ebe0c2;
+    font-family: Arial, sans-serif;
+}
+
+#railwaysGame {
+    display: none;
+}
+
+#railwaysMenu {
+    display: none;
+}
+
+#railwaysGame.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40em;
+}
+
+#railwaysMenu.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 15em;
+    text-align: center;
+}
+
+button.item, select.item, input.item {
+    padding: 0.3em;
+    margin: 0.5em;
+    background-color: white;
+    border-color: brown;
+    color: brown;
+    border-radius: 1em;
+    border-width: 0.2em;
+}
+
+label {
+    color: brown;
+}
+
+h1.item {
+    color: lightsalmon;
+    font-size: 3em;
+}
+
+#desc {
+    max-width: 20em;
+    background-color: burlywood;
+    padding: 0.7em;
+    border-radius: 2em;
+}
+
+#warning {
+    color: red;
+    margin: 0.1em;
+}
+
+#railwaysCanvas {
+    background-color: #f0ecd4;
+    border: 0.4em solid black;
+    border-radius: 0.5em;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5em;
+    border-radius: 1em;
+    background-color: #bc8a48;
+    margin-left: 2em;
+}
+
+#player, #timer {
+    margin-top: 1.5em;
+    font-size: 1.2em;
+}
+
+#player {
+    margin-bottom: 0.5em;
+}

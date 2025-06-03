@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railways</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="railwaysMenu" class="active">
+        <h1 class="item">Railways</h1>
+        <input type="text" id="name" class="item" placeholder="Add meg a neved!" maxlength="15">
+        <label for="diff" class="item">Válassz nehézséget</label>
+        <select name="diff" id="diff" class="item">
+            <option value="0">5 x 5</option>
+            <option value="1">7 x 7</option>
+        </select>
+        <button id="start" class="item">Új játék</button>
+        <button id="rules" class="item">Leírás</button>
+    </div>
+    <div id="railwaysGame">
+        <div id="info">
+            <h1 id="player"></h1>
+            <h1 id="timer"></h1>
+        </div>
+        <canvas id="railwaysCanvas" width="525" height="525"></canvas>
+    </div>
+    <script src="game.js"></script>
+    <script src="levels.js"></script>
+    <script src="solutions.js"></script>
+</body>
+</html>
